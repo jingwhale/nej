@@ -1,0 +1,11 @@
+.wrap{width:900px;height:100%;margin:0 auto;border:1px solid #3C3C3C;background-color:#FDF5E6;}
+.wrap {height:665px;}
+
+.wrap h2{text-align: center;color: #FF69B4;}
+
+#box input{margin: 5px 320px;}
+.m-sug{width:258px;overflow:hidden;margin-left:320px;}
+#box .m-sug .js-selected{background-color:#ccc}
+.w-ipt{width:260px;outline:none}
+.w-ipt:focus{box-shadow:0 0 4px #c8e5fb;border:1px solid #4c7ad4}
+.m-sug .itm{height:26px;line-height:26px;}
