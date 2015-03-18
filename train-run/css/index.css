@@ -1,0 +1,6 @@
+.wrap{width:900px;height:100%;margin:0 auto;border:1px solid #3C3C3C;background-color:#FDF5E6;}
+.wrap .cnt{height:665px;}
+
+.wrap h2{text-align: center;color: #FF69B4;}
+
+.x-item{position:relative;width:300px;height:50px;margin:5px 0;background-color:#FFE4C4;text-align:center;line-height:50px;}

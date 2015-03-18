@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Form</title>
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <!-- @STYLE -->
+        <link type="text/css" rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body>
+        <div class="wrap">
+         <form class="w-form" data-focus-mode="1">
+            <p>Form</p>
+            <table>
+              <tr>
+                <td class="c0">用户名：</td>
+                <td class="c1">
+                    <input type="text"
+                           name="username" 
+                           class="text"
+                           placeholder="用户名"
+                           data-required="true"
+                           data-message="请输入用户名"/>
+                </td>
+                <td class="c2">
+                  <span id="username-tip">用户名输入提示信息</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="c0">密  码：</td>
+                <td class="c1">
+                    <input type="password"
+                           name="password" 
+                           class="text"
+                           placeholder="密码"
+                           data-required="true"
+                           data-message="请输入密码"/>
+                </td>
+                <td class="c2">
+                  <span id="password-tip">密码输入提示信息</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="c0">&nbsp;</td>
+                <td class="c1" colspan="2">
+                  <input type="button" value="提交" name="btn-ok"/>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <!-- @DEFINE -->
+        <script src="./js/nej/src/define.js?pro=./"></script>
+        <script src="./js/pro/index.js"></script>
+    </body>
+</html>

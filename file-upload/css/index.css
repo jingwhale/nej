@@ -1,0 +1,23 @@
+.wrap{width:900px;
+	height:100%;
+	margin:0 auto;
+    border:1px solid #3C3C3C;
+    background-color:#FDF5E6;
+}
+
+.wrap{
+	height:665px;
+}
+
+.wrap h2{
+	text-align: center;
+	color: #FF69B4;
+}
+
+form{
+	margin-top: 160px;
+	text-align: center;
+}
+
+#uploaderr{font-size:10px;color:#f00;}
+#preview{width:100%;}
