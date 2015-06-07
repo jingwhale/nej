@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>地区选择</title>
+	<style>
+		.box{width: 500px; margin: 0 auto;}
+		.area,.province,.city{width:120px;margin-left:15px}
+		.showdata{width: 500px; margin: 0 auto;padding-top: 15px;}
+	</style>
+</head>
+<body>
+	<div id="box" class="box">
+	    <div class="body" id="body">
+	       地区：<select id="province" class="province"></select><select id="city" class="city"></select><select id="area" class="area"></select>
+	    </div>
+	</div>
+	<div id="j-showdata" class="showdata"></div>
+
+	<script src="http://nej.netease.com/nej/src/define.js?pro=./"></script>
+	<script>
+		var f = function(){
+	    	var _  = NEJ.P,
+	        _e = _('nej.e'),
+	        _p = _('nej.ut');
+
+	        var myshowdata = _e._$get('j-showdata');
+	        var myprovince = _e._$get('province');
+	        var mycity = _e._$get('city');
+	        var myarea = _e._$get('area');
+	     
+	    
+		    var _region = _p._$$RegionSelector._$allocate({
+		        city:_e._$get('city'),
+		        province:_e._$get('province'),
+		        area:_e._$get('area'),
+		        data:{province:'浙江省',city:'杭州市',area:'滨江区'},
+		        onchange:onChange
+		    });
+
+		    function onChange(_type){
+		    	if(!!console)
+		    		console.log(_type);
+		    	myshowdata.innerHTML =  '你选择的是：'+myprovince.value+' '+mycity.value+' '+myarea.value;
+		    }
+		}
+		define(['{lib}util/region/region.zh.js','{lib}util/data/region/zh.js'],f);
+	</script>
+</body>
+</html>
